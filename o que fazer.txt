@@ -1,0 +1,33 @@
+ Ideia de Projeto Next.js: Lista de Tarefas (To-Do List) Interativa
+
+ 1. Título do Projeto
+
+Next.js To-Do App
+
+ 2. Descrição do Projeto
+
+O Next.js To-Do App é uma aplicação web simples e intuitiva para gerenciar tarefas diárias. Ele permitirá aos usuários adicionar, visualizar, marcar como concluídas e excluir tarefas. O foco será na experiência do usuário e na demonstração das capacidades básicas do Next.js para aplicações de página única (SPA) com renderização no lado do servidor (SSR) ou geração de site estático (SSG) para as páginas principais.
+
+ 3. Funcionalidades Principais
+
+*   Adicionar Tarefa: Um campo de entrada para digitar novas tarefas e um botão para adicioná-las à lista.
+*   Visualizar Tarefas: Exibição de todas as tarefas em uma lista, com cada tarefa mostrando seu texto.
+*   Marcar como Concluída: Um checkbox ou botão ao lado de cada tarefa para alternar seu status entre pendente e concluída. Tarefas concluídas podem ter um estilo visual diferente (ex: texto riscado).
+*   Excluir Tarefa: Um botão para remover tarefas individuais da lista.
+*   Persistência de Dados (Local): As tarefas serão salvas no `localStorage` do navegador para que não sejam perdidas ao recarregar a página.
+
+ 4. Por que Next.js para este projeto?
+
+Embora seja um projeto simples, o Next.js oferece benefícios mesmo aqui:
+
+*   Roteamento Baseado em Arquivos: Facilita a criação de diferentes páginas (ex: `/`, `/sobre`) sem configuração manual de rotas.
+*   Renderização Híbrida: Podemos usar SSG para a página inicial (se a lista for inicialmente vazia ou carregada de um JSON estático) e SSR para a API que gerencia as tarefas, ou até mesmo Client-Side Rendering (CSR) para a lógica principal da lista de tarefas.
+*   API Routes: Para um projeto futuro, podemos facilmente estender a aplicação para usar um backend real, criando endpoints API diretamente no Next.js para salvar e buscar tarefas de um banco de dados.
+*   Otimização de Performance: O Next.js otimiza automaticamente o carregamento de recursos, o que é um bom aprendizado para projetos maiores.
+
+ 5. Tecnologias Complementares Sugeridas
+
+*   Estilização: CSS Modules (padrão do Next.js) ou Tailwind CSS (para um aprendizado rápido de utilitários de CSS).
+*   Gerenciamento de Estado: Não é estritamente necessário para este projeto simples, mas o Context API do React pode ser usado para gerenciar o estado das tarefas de forma global, se desejar.
+*   Persistência: `localStorage` do navegador.
+
